@@ -13,8 +13,11 @@ load_dotenv()
 # ELASTIC_HOST = "https://localhost:9200"
 
 
-ELASTIC_CLOUD_URL = os.getenv("Elasticsearch_URL")
-ELASTIC_API_KEY = os.getenv("ELASTIC_API_KEY")  
+# ELASTIC_CLOUD_URL = os.getenv("Elasticsearch_URL")
+# ELASTIC_API_KEY = os.getenv("ELASTIC_API_KEY")  
+ELASTIC_CLOUD_URL = st.secrets["Elasticsearch_URL"]
+ELASTIC_API_KEY = st.secrets["ELASTIC_API_KEY"]  
+
 try:
     es = Elasticsearch(
     ELASTIC_CLOUD_URL,
