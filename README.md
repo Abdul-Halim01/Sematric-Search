@@ -183,3 +183,6 @@ streamlit run searchApp.py
 - **Streamlit**: For the intuitive web interface framework
 - **Myntra**: For the fashion product dataset
 
+## Can see project in Streamlit
+
+https://sematric-search.streamlit.app/
